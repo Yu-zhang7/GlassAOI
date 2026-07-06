@@ -205,5 +205,3 @@ LogConsoleLevel=2           ; spdlog 控制台日志级别
 ## 许可证
 
 本项目源码为私有，保留所有权利。未经授权不得复制、分发或商用。
-
-`License.lic` 文件已被 `.gitignore` 显式排除，绝不会进入仓库。
