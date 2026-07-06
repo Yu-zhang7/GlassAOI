@@ -88,24 +88,6 @@ GlassInspection_v3/
 - `TableView/TableViewWidget`：缺陷实时表格
 - `CustomWidget/`：自绘标题栏、工具按钮等
 
-### `Src/Tuning` — 算法调参层（重点）
-为了在保护核心算法（DLL）的同时允许**现场对个别方法做修改**，本工程引入 `Tuning::` 命名空间下的自由函数：
-
-```cpp
-// 默认实现：直接转调 DLL
-namespace Tuning {
-    std::vector<drawInformation> GetDefectLevel(...);          // 缺陷分级
-    std::vector<drawInformation> filterDefectsByBorderRegion(...); // 边界过滤
-    // ...
-}
-```
-
-调用点（`Src/Algorithm/Compute.cpp`、`AlgorithmProcess.cpp` 等）通过 `Tuning::XXX(...)` 访问算法能力：
-- **不修改**的方法 → 默认实现转发到 DLL，行为与算法库一致；
-- **需要现场修改**的方法 → 直接在 `Src/Tuning/*.cpp` 中改写源码，重新编译应用即可生效，无需触碰 DLL。
-
-这是「DLL 封装核心算法 + 源码层暴露少量可改写入口」的折中方案。
-
 ### `Src/Global` — 全局基础设施
 日志（`LoggerManager` + spdlog 封装）、配置文件读写（`ConfigManager`）、全局常量与枚举（`Global.h`）、图像美化（`ImageBeautify`）、消息总线（`DisplayMessage`）等。
 
