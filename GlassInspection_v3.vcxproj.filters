@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Header Files\ViewUi">
+      <UniqueIdentifier>{f8cf2014-2bc9-4c8c-ac99-5fcbef1354a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ViewUi">
+      <UniqueIdentifier>{0d9493e8-1084-4116-85d5-935e67d1007d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Global">
+      <UniqueIdentifier>{17734965-e7c2-4694-bc86-44c5d127aed1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ViewUi\CustomWidget">
+      <UniqueIdentifier>{bdcdb33b-f913-475c-b519-b38b7c38bec8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ViewUi\CustomWidget">
+      <UniqueIdentifier>{0d1f68ca-a486-4ded-9018-24c8e3d4db38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Global">
+      <UniqueIdentifier>{09f85984-1b7d-4dc3-aabe-c30c8bc6213b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ViewUi\ImageView">
+      <UniqueIdentifier>{b77e3026-17eb-4c22-ad30-26e6d7320e22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ViewUi\ImageView">
+      <UniqueIdentifier>{8502bd69-1ac0-4203-a707-c2ee02c251b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ViewUi\TableView">
+      <UniqueIdentifier>{4fbdca8d-6d93-414b-aac1-91fe098cfd66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ViewUi\TableView">
+      <UniqueIdentifier>{a92c48c4-f82c-4550-84ae-328d6c8927cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Project">
+      <UniqueIdentifier>{799405d8-ff7a-47dd-aa98-c6d6e8700396}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Project">
+      <UniqueIdentifier>{c20ab807-a3eb-465a-b5dc-761d5e31b17e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Camera">
+      <UniqueIdentifier>{3974b813-836c-40a8-be87-a6b9f6577fe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Camera">
+      <UniqueIdentifier>{c1b17588-c796-4020-bcb9-cb7f0768ad3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Project\HDF5">
+      <UniqueIdentifier>{89dca349-ac74-4af1-a95e-fcf023255b2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Project\Json">
+      <UniqueIdentifier>{b59d86b7-d21f-4168-975d-1f8c9844dea7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Project\HDF5">
+      <UniqueIdentifier>{cc1c6cdb-9009-4f44-8933-c9f0568fe6b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Project\Json">
+      <UniqueIdentifier>{324a5d46-e51e-4784-8b96-0e305b805e02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Project\SQLiteUtils">
+      <UniqueIdentifier>{9962a695-6eb1-4a08-b2f4-aaec259eb56b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Project\SQLiteUtils">
+      <UniqueIdentifier>{be9c39cc-0ebe-4c7b-8267-f8612e71c4fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Project\Platform">
+      <UniqueIdentifier>{1570cb76-443e-4eeb-be95-8dab7afb29e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Project\Platform">
+      <UniqueIdentifier>{36c79b34-4655-41e0-8ee5-dc7fac5aa594}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Algorithm">
+      <UniqueIdentifier>{67435f49-bd3c-48b2-8e2f-1498d96d5b47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Algorithm">
+      <UniqueIdentifier>{c6964d14-f19a-4964-929f-fe0da642dcb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Algorithm\segmentImage">
+      <UniqueIdentifier>{1e61ff91-e126-4038-8402-4e7dd7128c66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Algorithm\segmentImage">
+      <UniqueIdentifier>{c8a9addb-c642-48ef-918a-0f1e6c3af917}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tuning">
+      <UniqueIdentifier>{d1e2f3a4-5678-4abc-9def-100000000001}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tuning">
+      <UniqueIdentifier>{d1e2f3a4-5678-4abc-9def-100000000002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Project\License">
+      <UniqueIdentifier>{c987f7c2-c07d-46c8-a561-2a26bfa3c369}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Project\License">
+      <UniqueIdentifier>{c21a51d7-cb29-4f44-9735-2a7250591400}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ViewUi\CustomWidget\ItemDelegate.cpp">
+      <Filter>Source Files\ViewUi\CustomWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ViewUi\CustomWidget\ImageWidget.cpp">
+      <Filter>Source Files\ViewUi\CustomWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ViewUi\ConfigWidget.cpp">
+      <Filter>Source Files\ViewUi</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ViewUi\ImageView\ImageViewWidget.cpp">
+      <Filter>Source Files\ViewUi\ImageView</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ViewUi\ImageView\DefectInfoItem.cpp">
+      <Filter>Source Files\ViewUi\ImageView</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ViewUi\ImageView\GraphicsView.cpp">
+      <Filter>Source Files\ViewUi\ImageView</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ViewUi\ImageView\DefectRectShow.cpp">
+      <Filter>Source Files\ViewUi\ImageView</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ViewUi\ImageView\ChangeDefectInfoDialog.cpp">
+      <Filter>Source Files\ViewUi\ImageView</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ViewUi\ImageView\TypeAutoRegister.cpp">
+      <Filter>Source Files\ViewUi\ImageView</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Project\ImageSaver.cpp">
+      <Filter>Source Files\Project</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Project\HDF5\HDF5Utils.cpp">
+      <Filter>Source Files\Project\HDF5</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Project\Json\glassData2Json.cpp">
+      <Filter>Source Files\Project\Json</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Project\DataSave.cpp">
+      <Filter>Source Files\Project</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Project\SQLiteUtils\SQLiteUtils.cpp">
+      <Filter>Source Files\Project\SQLiteUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Global\ImageBeautify.cpp">
+      <Filter>Source Files\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Project\Platform\Zcontroller.cpp">
+      <Filter>Source Files\Project\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ViewUi\CustomWidget\CustomTableModel.cpp">
+      <Filter>Source Files\ViewUi\CustomWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ViewUi\ImageView\HistoryRecordWidget.cpp">
+      <Filter>Source Files\ViewUi\ImageView</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ViewUi\TableView\TableViewWidget.cpp">
+      <Filter>Source Files\ViewUi\TableView</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ViewUi\CustomWidget\CustomCheckBoxHeaderView.cpp">
+      <Filter>Source Files\ViewUi\CustomWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Project\MainProcess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ViewUi\MianWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ViewUi\CustomWidget\EditableCheckBox.cpp">
+      <Filter>Source Files\ViewUi\CustomWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ViewUi\TableView\ThumbnailWidget.cpp">
+      <Filter>Source Files\ViewUi\TableView</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ViewUi\TableView\DefectImageShow.cpp">
+      <Filter>Source Files\ViewUi\TableView</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Camera\CameraFactory.cpp">
+      <Filter>Source Files\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Camera\CameraManager.cpp">
+      <Filter>Source Files\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Camera\LineScanCamera_Base.cpp">
+      <Filter>Source Files\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Camera\LineScanCamera_HK.cpp">
+      <Filter>Source Files\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Camera\LineScanCamera_HR.cpp">
+      <Filter>Source Files\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Project\Platform\Platform.cpp">
+      <Filter>Source Files\Project\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Camera\ResultBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Algorithm\AlgorithmProcess.cpp">
+      <Filter>Source Files\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Algorithm\Compute.cpp">
+      <Filter>Source Files\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Tuning\DefectLevelTuning.cpp">
+      <Filter>Source Files\Tuning</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Tuning\GeneralMethodTuning.cpp">
+      <Filter>Source Files\Tuning</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Tuning\SegImageTuning.cpp">
+      <Filter>Source Files\Tuning</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Global\DisplayMessage.cpp">
+      <Filter>Source Files\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ViewUi\CustomWidget\DefectFilterWidget.cpp">
+      <Filter>Source Files\ViewUi\CustomWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Project\License\CryptoUtils.cpp">
+      <Filter>Source Files\Project\License</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Project\License\LicenseManager.cpp">
+      <Filter>Source Files\Project\License</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Algorithm\showVirtualInfo.cpp">
+      <Filter>Source Files\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Project\CleanupFiles.cpp">
+      <Filter>Source Files\Project</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ViewUi\CustomWidget\CustomSqlQueryModel.cpp">
+      <Filter>Source Files\ViewUi\CustomWidget</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="Src\ViewUi\ConfigWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Src\ViewUi\MainWindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Src\ViewUi\ImageView\ImageViewWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Src\ViewUi\ImageView\DefectRectShow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Src\ViewUi\ImageView\ChangeDefectInfoDialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Src\ViewUi\ImageView\HistoryRecordWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Src\ViewUi\TableView\TableViewWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Src\ViewUi\TableView\ThumbnailWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Src\ViewUi\TableView\DefectImageShow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="Src\ViewUi\ConfigWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Src\ViewUi\CustomWidget\ItemDelegate.h">
+      <Filter>Header Files\ViewUi\CustomWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="Src\ViewUi\ImageView\ImageViewWidget.h">
+      <Filter>Header Files\ViewUi\ImageView</Filter>
+    </QtMoc>
+    <QtMoc Include="Src\ViewUi\ImageView\DefectInfoItem.h">
+      <Filter>Header Files\ViewUi\ImageView</Filter>
+    </QtMoc>
+    <QtMoc Include="Src\ViewUi\ImageView\GraphicsView.h">
+      <Filter>Header Files\ViewUi\ImageView</Filter>
+    </QtMoc>
+    <QtMoc Include="Src\ViewUi\ImageView\DefectRectShow.h">
+      <Filter>Header Files\ViewUi\ImageView</Filter>
+    </QtMoc>
+    <QtMoc Include="Src\ViewUi\ImageView\ChangeDefectInfoDialog.h">
+      <Filter>Header Files\ViewUi\ImageView</Filter>
+    </QtMoc>
+    <QtMoc Include="Src\Project\ImageSaver.h">
+      <Filter>Header Files\Project</Filter>
+    </QtMoc>
+    <QtMoc Include="Src\Project\DataSave.h">
+      <Filter>Header Files\Project</Filter>
+    </QtMoc>
+    <QtMoc Include="Src\ViewUi\CustomWidget\CustomTableModel.h">
+      <Filter>Header Files\ViewUi\CustomWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="Src\ViewUi\ImageView\HistoryRecordWidget.h">
+      <Filter>Header Files\ViewUi\ImageView</Filter>
+    </QtMoc>
+    <QtMoc Include="Src\ViewUi\TableView\TableViewWidget.h">
+      <Filter>Header Files\ViewUi\TableView</Filter>
+    </QtMoc>
+    <QtMoc Include="Src\ViewUi\CustomWidget\CustomCheckBoxHeaderView.h">
+      <Filter>Header Files\ViewUi\CustomWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="Src\Project\MainProcess.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Src\ViewUi\MainWindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Src\ViewUi\CustomWidget\EditableCheckBox.h">
+      <Filter>Header Files\ViewUi\CustomWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="Src\ViewUi\TableView\ThumbnailWidget.h">
+      <Filter>Header Files\ViewUi\TableView</Filter>
+    </QtMoc>
+    <QtMoc Include="Src\ViewUi\TableView\DefectImageShow.h">
+      <Filter>Header Files\ViewUi\TableView</Filter>
+    </QtMoc>
+    <QtMoc Include="Src\ViewUi\ImageView\ChartManager.h">
+      <Filter>Header Files\ViewUi\ImageView</Filter>
+    </QtMoc>
+    <QtMoc Include="Src\Global\DisplayMessage.h">
+      <Filter>Header Files\Global</Filter>
+    </QtMoc>
+    <QtMoc Include="Src\ViewUi\CustomWidget\DefectFilterWidget.h">
+      <Filter>Header Files\ViewUi\CustomWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="Src\Project\License\LicenseManager.h">
+      <Filter>Header Files\Project\License</Filter>
+    </QtMoc>
+    <QtMoc Include="Src\ViewUi\CustomWidget\CustomSqlQueryModel.h">
+      <Filter>Header Files\ViewUi\CustomWidget</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="Resource\GlassInspection_v3.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\Global\Log.hpp">
+      <Filter>Header Files\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\ViewUi\CustomWidget\ImageWidget.h">
+      <Filter>Header Files\ViewUi\CustomWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Global\ConfigManager.h">
+      <Filter>Header Files\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Global\Global.h">
+      <Filter>Header Files\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Global\header.h">
+      <Filter>Header Files\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\ViewUi\ImageView\TypeAutoRegister.h">
+      <Filter>Header Files\ViewUi\ImageView</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Global\GeneralMethod.h">
+      <Filter>Header Files\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Project\HDF5\HDF5Utils.h">
+      <Filter>Header Files\Project\HDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Project\Json\glassData2Json.h">
+      <Filter>Header Files\Project\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Project\SQLiteUtils\SQLiteUtils.h">
+      <Filter>Header Files\Project\SQLiteUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Global\ImageBeautify.h">
+      <Filter>Header Files\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Project\Platform\ZController.h">
+      <Filter>Header Files\Project\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Global\RecipeConfig.h">
+      <Filter>Header Files\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Camera\CameraManager.h">
+      <Filter>Header Files\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Camera\LineScanCamera_Base.h">
+      <Filter>Header Files\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Camera\LineScanCamera_HK.h">
+      <Filter>Header Files\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Camera\LineScanCamera_HR.h">
+      <Filter>Header Files\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Camera\CameraFactory.h">
+      <Filter>Header Files\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Project\Platform\Platform.h">
+      <Filter>Header Files\Project\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Camera\FrameBuffer.h">
+      <Filter>Header Files\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Camera\ResultBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Algorithm\AlgorithmProcess.h">
+      <Filter>Header Files\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Algorithm\segmentImage\defectLevel.h">
+      <Filter>Header Files\Algorithm\segmentImage</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Algorithm\segmentImage\EightDirectionSobel.h">
+      <Filter>Header Files\Algorithm\segmentImage</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Algorithm\segmentImage\segImage.h">
+      <Filter>Header Files\Algorithm\segmentImage</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Algorithm\Compute.h">
+      <Filter>Header Files\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Algorithm\header.h">
+      <Filter>Header Files\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Project\License\CryptoUtils.h">
+      <Filter>Header Files\Project\License</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Algorithm\showVirtualInfo.h">
+      <Filter>Header Files\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Tuning\DefectLevelTuning.h">
+      <Filter>Header Files\Tuning</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Tuning\GeneralMethodTuning.h">
+      <Filter>Header Files\Tuning</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Tuning\SegImageTuning.h">
+      <Filter>Header Files\Tuning</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Project\CleanupFiles.h">
+      <Filter>Header Files\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Global\GlobalRecipe.h">
+      <Filter>Header Files\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Algorithm\AlgorithmTensorRT\infertrt.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GlassInspection_v3.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resource\Logo\Logo-ico.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <QtTranslation Include="Translation\GlassInspection_en_US.ts">
+      <Filter>Translation Files</Filter>
+    </QtTranslation>
+    <QtTranslation Include="Translation\GlassInspection_ru_RU.ts">
+      <Filter>Translation Files</Filter>
+    </QtTranslation>
+    <QtTranslation Include="Translation\GlassInspection_zh_CN.ts">
+      <Filter>Translation Files</Filter>
+    </QtTranslation>
+    <QtTranslation Include="Translation\GlassInspection_es_ES.ts">
+      <Filter>Translation Files</Filter>
+    </QtTranslation>
+    <QtTranslation Include="Translation\GlassInspection_pt_BR.ts">
+      <Filter>Translation Files</Filter>
+    </QtTranslation>
+  </ItemGroup>
+</Project>

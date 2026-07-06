@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ThumbnailWidgetClass</class>
+ <widget class="QWidget" name="ThumbnailWidgetClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>721</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="MinimumExpanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>881</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Thumbnail</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+
+/* ================= 特定QLabel图像显示框样式 ================= */
+#lb_thumbnail_0,
+#lb_thumbnail_1,
+#lb_thumbnail_2,
+#lb_thumbnail_3
+{
+    background-color: #505050;
+    border: 2px solid #646464;
+    border-radius: 5px;
+    padding: 2px;
+    min-width: 120px;
+    min-height: 120px;
+    qproperty-alignment: AlignCenter;
+    qproperty-scaledContents: false;
+}
+
+/* 默认状态 */
+#lb_thumbnail_0, 
+#lb_thumbnail_1, 
+#lb_thumbnail_2,
+#lb_thumbnail_3
+{
+    border: 2px solid #646464;
+}
+
+/* 悬停状态 */
+#lb_thumbnail_0:hover, 
+#lb_thumbnail_1:hover, 
+#lb_thumbnail_2:hover,
+#lb_thumbnail_3:hover 
+{
+    border: 2px solid #FF9800;
+    background-color: #585858;
+}
+
+/* 选中状态 - 通过提高选择器特异性来确保优先级 */
+#lb_thumbnail_0[selected=&quot;true&quot;], 
+#lb_thumbnail_1[selected=&quot;true&quot;], 
+#lb_thumbnail_2[selected=&quot;true&quot;], 
+#lb_thumbnail_3[selected=&quot;true&quot;]
+{
+    border: 4px solid #FF9800;
+    background-color: #585858;
+}
+
+/* 按下状态 */
+#lb_thumbnail_0:pressed, 
+#lb_thumbnail_1:pressed, 
+#lb_thumbnail_2:pressed, 
+#lb_thumbnail_3:pressed
+{
+    border: 3px solid #FF9800;
+    background-color: #646464;
+}
+
+/* 选中状态下的悬停 */
+#lb_thumbnail_0[selected=&quot;true&quot;]:hover, 
+#lb_thumbnail_1[selected=&quot;true&quot;]:hover, 
+#lb_thumbnail_2[selected=&quot;true&quot;]:hover, 
+#lb_thumbnail_3[selected=&quot;true&quot;]:hover
+{
+    border: 4px solid #FF9800;
+    background-color: #646464;
+}
+
+/* 禁用状态 */
+#lb_thumbnail_0:disabled, 
+#lb_thumbnail_1:disabled, 
+#lb_thumbnail_2:disabled, 
+#lb_thumbnail_3:disabled
+{
+    border: 2px solid #3A3A3A;
+    background-color: #3A3A3A;
+}
+
+/* 图像显示框中的占位文本 */
+#lb_thumbnail_0::disabled, 
+#lb_thumbnail_1::disabled, 
+#lb_thumbnail_2::disabled, 
+#lb_thumbnail_3::disabled
+{
+    color: #888888;
+    font-style: italic;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>7</number>
+   </property>
+   <property name="leftMargin">
+    <number>5</number>
+   </property>
+   <property name="topMargin">
+    <number>5</number>
+   </property>
+   <property name="rightMargin">
+    <number>5</number>
+   </property>
+   <property name="bottomMargin">
+    <number>5</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>Thumbnails</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="lb_thumbnail_0">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>128</width>
+       <height>128</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>128</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="lb_thumbnail_1">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>128</width>
+       <height>128</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>128</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="lb_thumbnail_2">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>128</width>
+       <height>128</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>128</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="lb_thumbnail_3">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>128</width>
+       <height>128</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>128</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{90DC674F-B216-4865-9D03-8E6DACB2E753}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>5.14.2_msvc2017_64</QtInstall>
+    <QtModules>core;sql;gui;widgets;charts</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+    <Import Project="D:\ThirdPart\ReleaseProps\JSONCPP_RELEASE.props" />
+    <Import Project="D:\ThirdPart\ReleaseProps\SPDLOG_RELEASE.props" />
+    <Import Project="D:\ThirdPart\ReleaseProps\TENSOR_RELEASE.props" />
+    <Import Project="D:\ThirdPart\ReleaseProps\CUDA_11_8RELEASE.props" />
+    <Import Project="D:\ThirdPart\ReleaseProps\HR_2_5_1.props" />
+    <Import Project="D:\ThirdPart\ReleaseProps\HK_RELEASE.props" />
+    <Import Project="D:\ThirdPart\ReleaseProps\OPENCV481_RELEASE.props" />
+    <Import Project="D:\ThirdPart\ReleaseProps\HDF5_1_14_6_RELEASE.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <IncludePath>.\Include;.\Include\highfive;.\include\MCDLL;.\Include\deploy;.\include\QXlsx;.\Src\Algorithm;.\Src\Algorithm\segmentImage;.\Src\Global;.\Src\Project;.\Src\Project\Json;.\Src\Project\HDF5;.\Src\Project\SQLiteUtils;.\Src\Project\Platform;.\Src\Project\License;.\Src\Camera;.\Src\ViewUi;.\Src\ViewUi\CustomWidget;.\Src\ViewUi\ImageView;.\Src\ViewUi\TableView;.\Src\Algorithm\AlgorithmTensorRT;.\Src\Tuning;$(IncludePath)</IncludePath>
+    <LibraryPath>.\Libraries;$(LibraryPath)</LibraryPath>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ShenShiXi_glass.lib;InferTrt.lib;SegmentAlgorithm.lib;xmSigPlatform.lib;MCDLL_NET.lib;deploy.lib;QXlsx.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\Algorithm\AlgorithmProcess.cpp" />
+    <ClCompile Include="Src\Algorithm\Compute.cpp" />
+    <ClCompile Include="Src\Algorithm\showVirtualInfo.cpp" />
+    <ClCompile Include="Src\Tuning\DefectLevelTuning.cpp" />
+    <ClCompile Include="Src\Tuning\GeneralMethodTuning.cpp" />
+    <ClCompile Include="Src\Tuning\SegImageTuning.cpp" />
+    <ClCompile Include="Src\Camera\CameraFactory.cpp" />
+    <ClCompile Include="Src\Camera\CameraManager.cpp" />
+    <ClCompile Include="Src\Camera\LineScanCamera_Base.cpp" />
+    <ClCompile Include="Src\Camera\LineScanCamera_HK.cpp" />
+    <ClCompile Include="Src\Camera\LineScanCamera_HR.cpp" />
+    <ClCompile Include="Src\Camera\ResultBuffer.cpp" />
+    <ClCompile Include="Src\Global\DisplayMessage.cpp" />
+    <ClCompile Include="Src\Global\ImageBeautify.cpp" />
+    <ClCompile Include="Src\Project\CleanupFiles.cpp" />
+    <ClCompile Include="Src\Project\DataSave.cpp" />
+    <ClCompile Include="Src\Project\HDF5\HDF5Utils.cpp" />
+    <ClCompile Include="Src\Project\ImageSaver.cpp" />
+    <ClCompile Include="Src\Project\Json\glassData2Json.cpp" />
+    <ClCompile Include="Src\Project\License\CryptoUtils.cpp" />
+    <ClCompile Include="Src\Project\License\LicenseManager.cpp" />
+    <ClCompile Include="Src\Project\MainProcess.cpp" />
+    <ClCompile Include="Src\Project\Platform\Platform.cpp" />
+    <ClCompile Include="Src\Project\Platform\Zcontroller.cpp" />
+    <ClCompile Include="Src\Project\SQLiteUtils\SQLiteUtils.cpp" />
+    <ClCompile Include="Src\ViewUi\ConfigWidget.cpp" />
+    <ClCompile Include="Src\ViewUi\CustomWidget\CustomCheckBoxHeaderView.cpp" />
+    <ClCompile Include="Src\ViewUi\CustomWidget\CustomSqlQueryModel.cpp" />
+    <ClCompile Include="Src\ViewUi\CustomWidget\CustomTableModel.cpp" />
+    <ClCompile Include="Src\ViewUi\CustomWidget\DefectFilterWidget.cpp" />
+    <ClCompile Include="Src\ViewUi\CustomWidget\EditableCheckBox.cpp" />
+    <ClCompile Include="Src\ViewUi\CustomWidget\ImageWidget.cpp" />
+    <ClCompile Include="Src\ViewUi\CustomWidget\ItemDelegate.cpp" />
+    <ClCompile Include="Src\ViewUi\ImageView\ChangeDefectInfoDialog.cpp" />
+    <ClCompile Include="Src\ViewUi\ImageView\DefectInfoItem.cpp" />
+    <ClCompile Include="Src\ViewUi\ImageView\DefectRectShow.cpp" />
+    <ClCompile Include="Src\ViewUi\ImageView\GraphicsView.cpp" />
+    <ClCompile Include="Src\ViewUi\ImageView\HistoryRecordWidget.cpp" />
+    <ClCompile Include="Src\ViewUi\ImageView\ImageViewWidget.cpp" />
+    <ClCompile Include="Src\ViewUi\ImageView\TypeAutoRegister.cpp" />
+    <ClCompile Include="Src\ViewUi\MianWindow.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Src\ViewUi\TableView\DefectImageShow.cpp" />
+    <ClCompile Include="Src\ViewUi\TableView\TableViewWidget.cpp" />
+    <ClCompile Include="Src\ViewUi\TableView\ThumbnailWidget.cpp" />
+    <QtUic Include="Src\ViewUi\ConfigWidget.ui" />
+    <QtUic Include="Src\ViewUi\ImageView\ChangeDefectInfoDialog.ui" />
+    <QtUic Include="Src\ViewUi\ImageView\DefectRectShow.ui" />
+    <QtUic Include="Src\ViewUi\ImageView\HistoryRecordWidget.ui" />
+    <QtUic Include="Src\ViewUi\ImageView\ImageViewWidget.ui" />
+    <QtUic Include="Src\ViewUi\MainWindow.ui" />
+    <QtUic Include="Src\ViewUi\TableView\DefectImageShow.ui" />
+    <QtUic Include="Src\ViewUi\TableView\TableViewWidget.ui" />
+    <QtUic Include="Src\ViewUi\TableView\ThumbnailWidget.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="Src\ViewUi\MainWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="Src\ViewUi\ConfigWidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="Resource\GlassInspection_v3.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Src\Algorithm\AlgorithmProcess.h" />
+    <ClInclude Include="Src\Algorithm\AlgorithmTensorRT\infertrt.hpp" />
+    <ClInclude Include="Src\Algorithm\Compute.h" />
+    <ClInclude Include="Src\Algorithm\header.h" />
+    <ClInclude Include="Src\Algorithm\segmentImage\defectLevel.h" />
+    <ClInclude Include="Src\Algorithm\segmentImage\EightDirectionSobel.h" />
+    <ClInclude Include="Src\Algorithm\segmentImage\segImage.h" />
+    <ClInclude Include="Src\Algorithm\showVirtualInfo.h" />
+    <ClInclude Include="Src\Tuning\DefectLevelTuning.h" />
+    <ClInclude Include="Src\Tuning\GeneralMethodTuning.h" />
+    <ClInclude Include="Src\Tuning\SegImageTuning.h" />
+    <ClInclude Include="Src\Camera\CameraFactory.h" />
+    <ClInclude Include="Src\Camera\CameraManager.h" />
+    <ClInclude Include="Src\Camera\FrameBuffer.h" />
+    <ClInclude Include="Src\Camera\LineScanCamera_Base.h" />
+    <ClInclude Include="Src\Camera\LineScanCamera_HK.h" />
+    <ClInclude Include="Src\Camera\LineScanCamera_HR.h" />
+    <ClInclude Include="Src\Camera\ResultBuffer.h" />
+    <ClInclude Include="Src\Global\ConfigManager.h" />
+    <QtMoc Include="Src\Global\DisplayMessage.h" />
+    <ClInclude Include="Src\Global\GeneralMethod.h" />
+    <ClInclude Include="Src\Global\Global.h" />
+    <ClInclude Include="Src\Global\GlobalRecipe.h" />
+    <ClInclude Include="Src\Global\header.h" />
+    <ClInclude Include="Src\Global\ImageBeautify.h" />
+    <ClInclude Include="Src\Global\Log.hpp" />
+    <QtMoc Include="Src\ViewUi\TableView\DefectImageShow.h" />
+    <QtMoc Include="Src\ViewUi\TableView\ThumbnailWidget.h" />
+    <QtMoc Include="Src\ViewUi\TableView\TableViewWidget.h" />
+    <QtMoc Include="Src\Project\MainProcess.h" />
+    <QtMoc Include="Src\Project\ImageSaver.h" />
+    <QtMoc Include="Src\Project\DataSave.h" />
+    <ClInclude Include="Src\Global\RecipeConfig.h" />
+    <ClInclude Include="Src\Project\CleanupFiles.h" />
+    <ClInclude Include="Src\Project\HDF5\HDF5Utils.h" />
+    <ClInclude Include="Src\Project\Json\glassData2Json.h" />
+    <ClInclude Include="Src\Project\License\CryptoUtils.h" />
+    <QtMoc Include="Src\Project\License\LicenseManager.h" />
+    <ClInclude Include="Src\Project\Platform\Platform.h" />
+    <ClInclude Include="Src\Project\Platform\ZController.h" />
+    <ClInclude Include="Src\Project\SQLiteUtils\SQLiteUtils.h" />
+    <QtMoc Include="Src\ViewUi\CustomWidget\CustomTableModel.h" />
+    <QtMoc Include="Src\ViewUi\CustomWidget\CustomCheckBoxHeaderView.h" />
+    <QtMoc Include="Src\ViewUi\CustomWidget\EditableCheckBox.h" />
+    <QtMoc Include="Src\ViewUi\CustomWidget\DefectFilterWidget.h" />
+    <QtMoc Include="Src\ViewUi\CustomWidget\CustomSqlQueryModel.h" />
+    <ClInclude Include="Src\ViewUi\CustomWidget\ImageWidget.h" />
+    <QtMoc Include="Src\ViewUi\ImageView\ChartManager.h" />
+    <QtMoc Include="Src\ViewUi\ImageView\HistoryRecordWidget.h" />
+    <ClInclude Include="Src\ViewUi\ImageView\TypeAutoRegister.h" />
+    <QtMoc Include="Src\ViewUi\ImageView\ChangeDefectInfoDialog.h" />
+    <QtMoc Include="Src\ViewUi\ImageView\DefectRectShow.h" />
+    <QtMoc Include="Src\ViewUi\ImageView\GraphicsView.h" />
+    <QtMoc Include="Src\ViewUi\ImageView\DefectInfoItem.h" />
+    <QtMoc Include="Src\ViewUi\ImageView\ImageViewWidget.h" />
+    <QtMoc Include="Src\ViewUi\CustomWidget\ItemDelegate.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GlassInspection_v3.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resource\Logo\Logo-ico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtTranslation Include="Translation\GlassInspection_en_US.ts" />
+    <QtTranslation Include="Translation\GlassInspection_es_ES.ts" />
+    <QtTranslation Include="Translation\GlassInspection_pt_BR.ts" />
+    <QtTranslation Include="Translation\GlassInspection_ru_RU.ts" />
+    <QtTranslation Include="Translation\GlassInspection_zh_CN.ts" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ProjectReference Include="Dlls\InferTrt\InferTrt.vcxproj">
+      <Project>{1A2B3C4D-5E6F-4A7B-8C9D-0E1F2A3B4C5D}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Dlls\SegmentAlgorithm\SegmentAlgorithm.vcxproj">
+      <Project>{2B3C4D5E-6F7A-4B8C-9D0E-1F2A3B4C5D6E}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,68 @@
+<RCC>
+  <qresource prefix="Recipe">
+    <file>Recipe/8.png</file>
+    <file>Recipe/8_S.png</file>
+    <file>Recipe/9.png</file>
+    <file>Recipe/9_S.png</file>
+    <file>Recipe/10.png</file>
+    <file>Recipe/10_S.png</file>
+    <file>Recipe/11.png</file>
+    <file>Recipe/11_S.png</file>
+    <file>Recipe/12.png</file>
+    <file>Recipe/12_S.png</file>
+    <file>Recipe/崩边.png</file>
+    <file>Recipe/玻渣.png</file>
+    <file>Recipe/麻点.png</file>
+    <file>Recipe/其他.png</file>
+    <file>Recipe/云朵.png</file>
+    <file>Recipe/0.png</file>
+    <file>Recipe/0_S.png</file>
+    <file>Recipe/1.png</file>
+    <file>Recipe/1_S.png</file>
+    <file>Recipe/2.png</file>
+    <file>Recipe/2_S.png</file>
+    <file>Recipe/3.png</file>
+    <file>Recipe/3_S.png</file>
+    <file>Recipe/4.png</file>
+    <file>Recipe/4_S.png</file>
+    <file>Recipe/5.png</file>
+    <file>Recipe/5_S.png</file>
+    <file>Recipe/6.png</file>
+    <file>Recipe/6_S.png</file>
+    <file>Recipe/7.png</file>
+    <file>Recipe/7_S.png</file>
+    <file>Recipe/划痕.png</file>
+    <file>Recipe/镀膜不良.png</file>
+    <file>Recipe/结石.png</file>
+    <file>Recipe/气泡.png</file>
+    <file>Recipe/商标.png</file>
+    <file>Recipe/水渍.png</file>
+    <file>Recipe/丝印.png</file>
+    <file>Recipe/脏污.png</file>
+  </qresource>
+  <qresource prefix="Arrow">
+    <file>Arrow/Down_arrow_light.png</file>
+    <file>Arrow/Up_arrow_light.png</file>
+  </qresource>
+  <qresource prefix="Logo">
+    <file>Logo/Logo-ico.ico</file>
+    <file>Logo/Logo.png</file>
+    <file>Logo/Logo_icon.png</file>
+  </qresource>
+  <qresource prefix="State">
+    <file>State/Led_G.png</file>
+    <file>State/Led_R.png</file>
+    <file>State/Led_Y.png</file>
+  </qresource>
+  <qresource prefix="TitleBarButton">
+    <file>TitleBarButton/btnClose_hover.png</file>
+    <file>TitleBarButton/btnClose_normal.png</file>
+    <file>TitleBarButton/btnMin_hover.png</file>
+    <file>TitleBarButton/btnMin_normal.png</file>
+  </qresource>
+  <qresource prefix="ToolButton">
+    <file>ToolButton/Conifg.png</file>
+    <file>ToolButton/Start.png</file>
+    <file>ToolButton/Stop.png</file>
+  </qresource>
+</RCC>

@@ -1,69 +1,57 @@
-# Prerequisites
-*.d
+# ===== License (must never be committed) =====
+License.lic
+*.lic
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-*.so.*
-
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# Build directories
+# ===== Build artifacts =====
+.vs/
+x64/
+Debug/
+Release/
 build/
-Build/
-build-*/
 
-# CMake generated files
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
-install_manifest.txt
-compile_commands.json
+# Object/precompiled/intermediate files
+*.obj
+*.pdb
+*.ipch
+*.tlog
+*.idb
+*.ilk
+*.exp
+*.lastbuildstate
+*.unsuccessfulbuild
+*.iobj
+*.ipdb
+*.recipe
+*.cache
 
-# Temporary files
-*.tmp
+# ===== Generated Qt files =====
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.pb.h
+*.pb.cc
+
+# ===== Large AI model binaries (exceed GitHub's 100MB limit) =====
+*.onnx
+*.engine
+*.trt
+*.plan
+
+# ===== Local runtime data =====
 *.log
+*.tmp
 *.bak
-*.swp
+bak/
 
-# vcpkg
-vcpkg_installed/
+# ===== IDE / editor =====
+*.user
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
 
-# debug information files
-*.dwo
-
-# test output & cache
-Testing/
-.cache/
+# ===== OS =====
+Thumbs.db
+.DS_Store

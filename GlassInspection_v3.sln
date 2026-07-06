@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36121.58
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GlassInspection_v3", "GlassInspection_v3.vcxproj", "{90DC674F-B216-4865-9D03-8E6DACB2E753}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InferTrt", "Dlls\InferTrt\InferTrt.vcxproj", "{1A2B3C4D-5E6F-4A7B-8C9D-0E1F2A3B4C5D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SegmentAlgorithm", "Dlls\SegmentAlgorithm\SegmentAlgorithm.vcxproj", "{2B3C4D5E-6F7A-4B8C-9D0E-1F2A3B4C5D6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90DC674F-B216-4865-9D03-8E6DACB2E753}.Release|x64.ActiveCfg = Release|x64
+		{90DC674F-B216-4865-9D03-8E6DACB2E753}.Release|x64.Build.0 = Release|x64
+		{1A2B3C4D-5E6F-4A7B-8C9D-0E1F2A3B4C5D}.Release|x64.ActiveCfg = Release|x64
+		{2B3C4D5E-6F7A-4B8C-9D0E-1F2A3B4C5D6E}.Release|x64.ActiveCfg = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E5F9325-95B7-4D51-99FD-78ABB325B409}
+	EndGlobalSection
+EndGlobal

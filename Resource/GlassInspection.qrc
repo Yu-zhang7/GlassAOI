@@ -1,0 +1,27 @@
+<RCC>
+  <qresource prefix="/MainWindow">
+    <file>7.png</file>
+    <file>7_S.png</file>
+    <file>Logo-ico.ico</file>
+    <file>0_S.png</file>
+    <file>1_S.png</file>
+    <file>2_S.png</file>
+    <file>3_S.png</file>
+    <file>4_S.png</file>
+    <file>5_S.png</file>
+    <file>6_S.png</file>
+    <file>download.png</file>
+    <file>setting.png</file>
+    <file>Led_G.png</file>
+    <file>Led_R.png</file>
+    <file>Led_Y.png</file>
+    <file>0.png</file>
+    <file>Logo.png</file>
+    <file>1.png</file>
+    <file>2.png</file>
+    <file>3.png</file>
+    <file>4.png</file>
+    <file>5.png</file>
+    <file>6.png</file>
+  </qresource>
+</RCC>
